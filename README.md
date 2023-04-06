@@ -1,11 +1,11 @@
-About napari-annotator
-======================
+About napari-annotator-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-annotator-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/loicsauteur/napari-annotator
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-annotator-feedstock/blob/main/LICENSE.txt)
 
 Summary: A lightweight plugin extending label layer control
 
