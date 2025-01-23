@@ -1,13 +1,13 @@
 {% set name = "napari-annotator" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_annotator-{{ version }}.tar.gz
-  sha256: 15177d50d820c22afc5f70c7d02e4ef56f7ed52a1453c2c692eb488beb2beb7f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_annotator-{{ version }}.tar.gz
+  sha256: 897ac292682469a2c4eb15af393f3950df8151e53a30e74e2f4fd54711da8175
 
 build:
   noarch: python
@@ -17,12 +17,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
+    - setuptools-scm
   run:
     - napari
     - numpy
-    - python >=3.7
+    - python >=3.9
     - scikit-image
+    - pyqt
+    - numpy <2.0
 
 test:
   imports:
@@ -32,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - pyqt
 
 about:
   home: https://github.com/loicsauteur/napari-annotator
